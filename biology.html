@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<!-- 
@@ -9,23 +10,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">	
-	<title>English: BitEruptor Technologies</title>
+	<title>Biology: BitEruptor Technologies</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<style>
-		html,body{
-			width:100%;
-			height:100%
-		}
-		footer{
-			margin:0;
-			margin-bottom:0;
-		}
-		body{
-			background: url(http://www.designbolts.com/wp-content/uploads/2012/12/Noisy-Grid-Seamless-Pattern-For-Website-Background.jpg);
+	<style type="text/css">
+		#main{
+			background:url(http://www.designbolts.com/wp-content/uploads/2012/12/Noisy-Grid-Seamless-Pattern-For-Website-Background.jpg);
 		}
 	</style>
-
 </head>
 <body>
 	<nav class = "hide-on-small-only green -lighten2">
@@ -36,15 +28,19 @@
 				<li><a href="biology.html">Biology</a></li>
 			</ul>
 		</nav>
-	<h2 class = "center green-text">English</h2>
-	<div class="container center">
-		<h2 class="center black-text">PSA</h2>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/NjXFeNFdQbw" frameborder="0" allowfullscreen></iframe>
+		<div id = "main">
+			<h2 class="center green-text">Biology</h2>
+
+			<h3 class="center black-text">Magazine</h3>
+			<!-- <div class="center"> -->
+			<div class="center" width = "1000px" height = "500px" onload="this.width=screen.width;this.height=screen.height;">
+			    <object data="idp.pdf" type="application/pdf" width:"500px" height = "500px" class = "center" onload="this.width=screen.width;this.height=screen.height;">
+			        <embed src="idp.pdf" type="application/pdf" class = "center"/>
+			    </object>
+			</div>
+			<hr>
 	</div>
-	<div class = "container">
-		<h2 class = "center">Business Letter</h2>
-<iframe src="https://docs.google.com/document/d/1MHBtr-7jb8hYzBxVMRiKfkoDJ7HHgiVdoSJjkFl3wWE/pub?embedded=true" width = "100%" height = "100%" allowfullscreen frameborder = "0"></iframe>	</div>
-		<footer class = "page-footer white-text green -lighten2" style = "margin:0;margin-bottom:10">
+		<footer class = "page-footer white-text green -lighten2">
 			<div class = "container">
 				<div class = "row">
 					<div class = "col s4">
@@ -55,4 +51,4 @@
 			</div>
 		</footer>
 </body>
-</html>	
+</html>

@@ -1,22 +1,30 @@
 jQuery(function($, undefined) {
     $('#terminal').terminal(function(command, term) {
+        echo("Help.");
         if (command !== '') {
-            try {
-                var result = window.eval(command);
-                if (result !== undefined) {
-                    term.echo(new String(result));
-                }
-            } catch(e) {
-                term.error(new String(e));
+            if(command.lower()=="english"){
+                window.location("english.html");
+            }
+            else if(command.lower()=="math"){
+                window.location("math.html");
+            }
+            else if(command.lower()=="biology"){
+                window.location("biology.html");
+            }
+            else if(command.lower()=="help"){
+                term.echo("Enter clear to clear the console.")
+            }
+            else{
+                term.echo("Enter: English, Math, or Biology to be redirected to it.");
             }
         } else {
            term.echo('');
         }
     }, {
-        greetings: 'Javascript Interpreter',
-        name: 'js_demo',
-        height: 200,
-        prompt: 'js> '
+        greetings: 'BitEruptor Terminal',
+        name: 'BitEruptor',
+        height: 500,
+        prompt: 'in> '
     });
 });
 
